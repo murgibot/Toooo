@@ -36,7 +36,7 @@ module.exports.run = async ({ api, event, args }) => {
       url: linkanh
     }];
 
-    const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN-07/Nayan/main/api.json');
+    const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-MEHEDY/Mehedi/main/api.json');
     const n = apis.data.api;
     const allPromises = attachments.map(item => {
       const encodedItemUrl = encodeURIComponent(item.url);
