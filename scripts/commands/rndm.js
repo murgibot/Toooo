@@ -17,7 +17,7 @@ module.exports.run = async function ({ api, event }) {
   const axios = require("axios");
 
   try {
-    const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN-07/Nayan/main/api.json');
+    const apis = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-MEHEDI/Mehedi/main/api.json');
     const n = apis.data.api;
 
     const res = await axios.get(`${n}/video/mixvideo`);
